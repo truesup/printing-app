@@ -1,0 +1,99 @@
+:root {
+  --color-green: #699fa3;
+  --color-white: #f1f1f1;
+  --color-grey: #c0c0c0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 100dvw;
+  min-height: 100dvh;
+  background-color: var(--color-green);
+  font-family: 'Poppins', serif;
+  /* 400 500 600 700 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-outer {
+  max-width: 600px;
+  height: 300px;
+  box-sizing: border-box;
+  padding: 20px 16px;
+  background-color: var(--color-white);
+  border-radius: 12px;
+}
+
+.wrapper-inner {
+  border: 1px solid var(--color-green);
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.paragraph {
+  height: auto;
+  overflow: scroll;
+  border-bottom: 1px solid var(--color-green);
+  text-align: justify;
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+
+.paragraph::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.info {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12%;
+}
+
+.info-expanded {
+  display: flex;
+  gap: 16px;
+}
+
+.info-expanded p,
+.info-expanded p span {
+  font-size: 14px;
+}
+
+.info-expanded p span {
+  font-weight: 500;
+}
+
+.try-button {
+  padding: 6px 20px;
+  border: none;
+  outline: none;
+  background-color: var(--color-green);
+  border-radius: 4px;
+  font-size: 14px;
+  color: var(--color-white);
+  transition: scale 0.3s ease;
+}
+
+.try-button:hover {
+  cursor: pointer;
+}
+
+.try-button:active {
+  scale: 0.95;
+}
+
+/* 1025px is a minumum */
