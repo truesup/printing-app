@@ -1,6 +1,11 @@
 :root {
   --color-green: #699fa3;
   --color-white: #f1f1f1;
+  --color-correct: #45c75c;
+  --color-active: #a4ca4b;
+  --color-incorrect: #cb3439;
+  --color-black: #111;
+  --bg-incorrect: #ffc0cb;
 }
 
 * {
@@ -51,12 +56,51 @@ body {
   text-align: justify;
   font-size: 16px;
   padding-bottom: 8px;
-  letter-spacing: 1.3px;
+  /* letter-spacing: 1.5px; */
 }
 
 .paragraph::-webkit-scrollbar {
   width: 0;
   height: 0;
+}
+
+.paragraph p span {
+  position: relative;
+}
+
+.paragraph p span.correct {
+  color: var(--color-correct);
+  box-sizing: border-box;
+}
+
+.paragraph p span.incorrect {
+  color: var(--color-incorrect);
+  /* background-color: var(--bg-incorrect);
+  outline: 1px solid var(--color-white);
+  border-radius: 4px; */
+  box-sizing: border-box;
+}
+
+.paragraph p span.active {
+  color: var(--color-black);
+}
+
+.paragraph p span.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  opacity: 0;
+  background: var(--color-green);
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
 }
 
 .info {
