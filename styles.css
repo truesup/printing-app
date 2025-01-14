@@ -74,15 +74,10 @@ body {
 
 .paragraph p span.correct {
   color: var(--color-correct);
-  box-sizing: border-box;
 }
 
 .paragraph p span.incorrect {
   color: var(--color-incorrect);
-  /* background-color: var(--bg-incorrect);
-  outline: 1px solid var(--color-white);
-  border-radius: 4px; */
-  box-sizing: border-box;
 }
 
 .paragraph p span.active {
@@ -97,7 +92,7 @@ body {
   height: 2px;
   width: 100%;
   opacity: 0;
-  background: var(--color-green);
+  background: var(--color-black);
   animation: blink 1s ease-in-out infinite;
 }
 
