@@ -29,7 +29,7 @@ body {
 }
 
 .wrapper-outer {
-  max-width: 600px;
+  width: 600px;
   height: 300px;
   box-sizing: border-box;
   padding: 20px 16px;
@@ -56,7 +56,11 @@ body {
   text-align: justify;
   font-size: 16px;
   padding-bottom: 8px;
-  /* letter-spacing: 1.5px; */
+}
+
+.paragraph p {
+  letter-spacing: 1px;
+  word-break: break-all;
 }
 
 .paragraph::-webkit-scrollbar {
