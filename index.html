@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="message">Click the text and start typing!</div>
     <div class="wrapper-outer">
       <div class="wrapper-inner">
-        <input type="text" class="typing-input" />
         <div class="paragraph">
           <p></p>
         </div>
@@ -23,11 +23,11 @@
             <p class="time">Time left: <span>60s</span></p>
             <p class="mistakes">Mistakes: <span>0</span></p>
             <p class="wpm">WPM: <span>0</span></p>
-            <p class="cpm">CPM: <span>0</span></p>
           </div>
-          <button class="try-button">Try again</button>
+          <button class="reset-button">Try again</button>
         </div>
       </div>
+      <input type="text" class="typing-input visually-hidden" />
     </div>
 
     <!-- <script src="./paragraphs.js"></script> -->
